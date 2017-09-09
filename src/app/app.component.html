@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<section id="login">
+    <div class="container">
+        <div class="row" >
+           
+                <h1>{{title}}</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NAME:</th>
+                            <th>AGE:</th>
+                            <th>STREAM:</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr  *ngFor="let d of details;">
+                          <td appMyHighlight>{{d.id}}</td>
+                            <td>{{d.name}}</td>
+                            <td>{{d.age}}</td>
+                            <td>{{d.stream}}</td>
+                                <tr>
+                    </tbody>
+                </table>
+            
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
